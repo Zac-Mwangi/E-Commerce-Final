@@ -7,14 +7,16 @@ const productRoutes = require("./routes/products");
 // express app
 const app = express();
 
+// cors
+const cors= require('cors');
+
 // middleware
 app.use(express.json());
 
-// Allow Cross-Origin Requests
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
+// Allow Cross-Origin Requests from all
+app.use(cors({
+  origin: '*'
+}));
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
