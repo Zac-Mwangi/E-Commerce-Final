@@ -21,7 +21,7 @@ export default function ProductContainer({ products, updateAfterDelete , setEdit
   const classes = useStyles();
 
   function handleDelete(idd) {
-    fetch("/api/products/" + idd, {
+    fetch("https://e-commerce-backend-zack.vercel.app/api/products/" + idd, {
       method: "DELETE",
     })
       .then((r) => r.json())

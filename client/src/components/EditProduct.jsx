@@ -14,7 +14,7 @@ export default function EditProduct({ editID }) {
   const [image, setImage] = useState("");
 
     useEffect(() => {
-      fetch("/api/products/" + editID)
+      fetch("https://e-commerce-backend-zack.vercel.app/api/products/" + editID)
         .then((r) => r.json())
         .then((data) => {
             setName(data.name);
@@ -40,7 +40,7 @@ export default function EditProduct({ editID }) {
       rating: rate,
     };
 
-    fetch("/api/products/" + editID, {
+    fetch("https://e-commerce-backend-zack.vercel.app/api/products/" + editID, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

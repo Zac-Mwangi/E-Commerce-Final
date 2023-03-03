@@ -4,7 +4,7 @@ import AddIcon from '@mui/icons-material/Add';
 
 export default function AddProducts() {
 
-    const url = "/api/products";
+    const url = "https://e-commerce-backend-zack.vercel.app/api/products";
 
     const [name, setName] = useState("")
     const [price, setPrice] = useState("")

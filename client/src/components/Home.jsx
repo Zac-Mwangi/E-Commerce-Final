@@ -13,7 +13,7 @@ export default function Home({ setEditId }) {
 
     // useEffect To Fetch All the products
     useEffect(() => {
-        fetch("/api/products")
+        fetch("https://e-commerce-backend-zack.vercel.app/api/products")
             .then((r) => r.json())
             .then((data) => {
                 setProducts(data)
