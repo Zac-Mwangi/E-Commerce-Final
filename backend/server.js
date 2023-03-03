@@ -10,6 +10,12 @@ const app = express();
 // middleware
 app.use(express.json());
 
+// Allow Cross-Origin Requests
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
