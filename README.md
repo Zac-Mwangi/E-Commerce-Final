@@ -33,10 +33,24 @@
 
 1. You need to clone the project
    > > Clone the Repository
-2. To install the Node Modules run
+
+
+    **FOR THE FRONT-END 
+    
+2. Navigate to the clients folder
+
+3. install the Node Modules run
    > > npm install
-3. If the intallation leads to any error run the command with --force as below especially in the client folder
+4. If the intallation leads to any error run the command with --force as below especially in the client folder
    > > npm install --force
+
+   ** FOR THE BACKEND
+
+5. Navigate to the backend folder 
+6. run npm install
+7. run npm run dev to start the server using nodemon
+8. You are good to go
+
 
 # GitHub Code
 
