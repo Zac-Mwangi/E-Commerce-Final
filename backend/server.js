@@ -16,6 +16,10 @@ app.use((req, res, next) => {
 });
 
 // routes
+app.get("/test", (req, res) => {
+  res.send("We're up and running ✈🌍");
+});
+
 app.use("/api/products", productRoutes);
 
 // connect to db
